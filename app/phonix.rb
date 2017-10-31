@@ -1,6 +1,4 @@
 def phone(number)
-
-
   keyboard = {
       "" => 1,
       "ABC" => 2,
@@ -13,7 +11,6 @@ def phone(number)
       "WXYZ" => 9,
       "0" => 0
   }
-
   output = ""
   number.chars.map do |char|
     if keyboard.keys.join(',').include?(char)
@@ -23,7 +20,6 @@ def phone(number)
     end
 
   end
-
   p output
 end
 
